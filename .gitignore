@@ -1,0 +1,19 @@
+# Quartus generated files (rebuilt by the compiler)
+db/
+incremental_db/
+simulation/
+*.qws
+*.bak
+*.rpt
+*.summary
+*.smsg
+*.done
+*.jdi
+*.pin
+*.sld
+*.map
+*.eqn
+*.pof
+*.cdf
+
+# keep the programming files (.sof) of each lab
