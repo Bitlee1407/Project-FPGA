@@ -8,3 +8,4 @@ Board: OMDAZZ Cyclone IV (`EP4CE10E22C8N`), Quartus Prime Lite 25.1.
 | Lab | Folder | Description |
 |-----|--------|-------------|
 | 1 | [`Lab 1`](Lab%201) | First programmed LED: a Quartus project where button S1 (`key1`) drives `led1` directly. Includes the lab guide `FPGA.pdf`. |
+| 2 | [`Lab 2`](Lab%202) | LED blinker: a button press (S1, active-low) toggles blinking of `led1`; the blink period comes from a counter on the 50 MHz clock. |

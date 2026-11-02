@@ -15,5 +15,6 @@ simulation/
 *.eqn
 *.pof
 *.cdf
+*.jditmp
 
 # keep the programming files (.sof) of each lab
