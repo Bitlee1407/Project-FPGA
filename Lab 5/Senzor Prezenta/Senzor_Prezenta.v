@@ -1,8 +1,9 @@
-
 module Senzor_Prezenta (
     input  wire clk,
     inout  wire sensor,
-    output wire buzzer
+    output wire buzzer,
+    output wire [7:0] seg,
+    output wire [3:0] dig
 );
 
     localparam CHARGE  = 2'd0;
@@ -127,6 +128,52 @@ module Senzor_Prezenta (
     wire [17:0] delta =
         (avg > baseline) ?
         (avg - baseline) : 18'd0;
+
+    reg [3:0] dist_val;
+    always @(*) begin
+        if (!calibrated)
+            dist_val = 4'd9;
+        else if (delta >= 45)
+            dist_val = 4'd0;
+        else if (delta >= 38)
+            dist_val = 4'd1;
+        else if (delta >= 31)
+            dist_val = 4'd2;
+        else if (delta >= 25)
+            dist_val = 4'd3;
+        else if (delta >= 19)
+            dist_val = 4'd4;
+        else if (delta >= 14)
+            dist_val = 4'd5;
+        else if (delta >= 10)
+            dist_val = 4'd6;
+        else if (delta >= 6)
+            dist_val = 4'd7;
+        else if (delta >= 3)
+            dist_val = 4'd8;
+        else
+            dist_val = 4'd9;
+    end
+
+    reg [7:0] seg_reg;
+    always @(*) begin
+        case (dist_val)
+            4'd0: seg_reg = 8'b1100_0000;
+            4'd1: seg_reg = 8'b1111_1001;
+            4'd2: seg_reg = 8'b1010_0100;
+            4'd3: seg_reg = 8'b1011_0000;
+            4'd4: seg_reg = 8'b1001_1001;
+            4'd5: seg_reg = 8'b1001_0010;
+            4'd6: seg_reg = 8'b1000_0010;
+            4'd7: seg_reg = 8'b1111_1000;
+            4'd8: seg_reg = 8'b1000_0000;
+            4'd9: seg_reg = 8'b1001_0000;
+            default: seg_reg = 8'b1111_1111;
+        endcase
+    end
+
+    assign seg = seg_reg;
+    assign dig = 4'b1110;
 
     reg [16:0] half_period;
 
