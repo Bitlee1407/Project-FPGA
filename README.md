@@ -5,7 +5,9 @@ Our team is composed of Bitlan Adrian-Gabriel, Dorobantu Iulian-Adrian, Ghibirdi
 
 Each member has a folder with their labs: [`Bitlan Adrian`](Bitlan%20Adrian), [`Dorobantu Iulian`](Dorobantu%20Iulian), [`Ghibirdic Maria`](Ghibirdic%20Maria), [`Ghita Alexandru`](Ghita%20Alexandru) and [`Juverdeanu Diana`](Juverdeanu%20Diana).
 
-Board: OMDAZZ Cyclone IV ([`EP4CE10E22C8N`](EP4CE10E22C8N.PDF)), Quartus Prime Lite 25.1.
+Board: OMDAZZ Cyclone IV [`EP4CE10E22C8N`](EP4CE10E22C8N.PDF), Quartus Prime Lite 25.1.
+
+Materials and the Documentation after we worked [`FPGA.pdf`](FPGA.pdf), [`FPGA6.pdf`](FPGA6.pdf)
 
 ## Labs
 
