@@ -1,9 +1,9 @@
 # Project-FPGA
 Lab work at FPGA this semester.
 
-Our team is composed of Bitlan Adrian-Gabriel, Dorobantu Iulian-Adrian, Ghibirdic Maria-Cristina, Ghita Alexandru-Catalin and JUverdeanu Diana-Maria.
+Our team is composed of Bitlan Adrian-Gabriel, Dorobantu Iulian-Adrian, Ghibirdic Maria-Cristina, Ghita Alexandru-Catalin and Juverdeanu Diana-Maria.
 
-The labs of Bitlan Adrian-Gabriel are in the [`Bitlan Adrian`](Bitlan%20Adrian) folder.
+Each member has a folder with their labs: [`Bitlan Adrian`](Bitlan%20Adrian), [`Dorobantu Iulian`](Dorobantu%20Iulian), [`Ghibirdic Maria`](Ghibirdic%20Maria), [`Ghita Alexandru`](Ghita%20Alexandru) and [`Juverdeanu Diana`](Juverdeanu%20Diana).
 
 Board: OMDAZZ Cyclone IV (`EP4CE10E22C8N`), Quartus Prime Lite 25.1.
 
